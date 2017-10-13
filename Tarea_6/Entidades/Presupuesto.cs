@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class DetallePresupuesto
+   public class Presupuesto
     {
         [Key]
-        public int DetalleId { get; set; }
-        public string Categoria { get; set; }
+        public int presupuestoId { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Descripcion { get; set; }
+        public int CantidadId { get; set; }
         public float Monto { get; set; }
     }
 }
