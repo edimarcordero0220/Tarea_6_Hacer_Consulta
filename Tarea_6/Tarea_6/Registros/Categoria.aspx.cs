@@ -16,7 +16,7 @@ namespace Tarea_6.Registros
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
