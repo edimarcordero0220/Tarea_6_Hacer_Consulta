@@ -13,11 +13,33 @@
             <br />
 &nbsp; ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox1" runat="server" Width="58px"></asp:TextBox>
+            <br />
         </div>
         Nombre<asp:TextBox ID="CategoriaTextBox" runat="server"></asp:TextBox>
+        
+        <asp:Label ID="Label1" runat="server"></asp:Label>
         <p>
+        
             <asp:Button ID="GuardarButton" runat="server" OnClick="GuardarButton_Click" Text="Guardar" />
+        
         </p>
+        <table style="width:100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

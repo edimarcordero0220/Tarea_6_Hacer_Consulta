@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Entidades;
+using DAL;
+using BLL;
 
 namespace Tarea_6.Registros
 {
@@ -13,10 +16,22 @@ namespace Tarea_6.Registros
         {
 
         }
+        public void Llenar(Entidades.Categorias c)
+        {
+            c.Descripcion = CategoriaTextBox.Text;
+           
+
+        }
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
-            
+            Categorias categoria = new Categorias();
+            Llenar(categoria);
+            CategoriaBLL.Guardar(categoria);
+            Label1.Text = "Registro con exito";
+
         }
+
+     
     }
 }
