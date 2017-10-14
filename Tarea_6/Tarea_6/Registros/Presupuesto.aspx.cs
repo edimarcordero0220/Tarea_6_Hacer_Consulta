@@ -20,37 +20,55 @@ namespace Tarea_6.Registros
         
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            cargarCombo();
+
+        }
+
+               public void SeleccionarCombo()
+             {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConStr"].ToString());
+            SqlCommand cmd = new SqlCommand("select * from Categorias");
+           
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
             
+            DataSet ds = new DataSet();
+        
+            sda.Fill(ds);
+                    DropDownList1.DataSource = ds;
+                   DropDownList1.DataTextField = "Categorias";                            // FieldName of Table in DataBase
+                    DropDownList1.DataValueField = "Categorias";
+                  DropDownList1.DataBind();
           
 
+            // Agregue los parámetros para SelectCommand.
+            
+        }
+        public void cargarCombo()
+        {
+            //DataTable dt = new DataTable();
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConStr"].ToString()))
+            {
+               // string query = "";
+
+                SqlCommand cmd = new SqlCommand("select Descripcion from Categorias", conn);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                DropDownList1.DataSource = conn;
+               DropDownList1.DataTextField = "CategoriaId";                            // FieldName of Table in DataBase
+                DropDownList1.DataValueField = "Descripcion";
+                DropDownList1.DataBind();
+            }
 
         }
 
-        public void SeleccionarCombo()
+            protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConStr"].ToString());
-            SqlCommand cmd = new SqlCommand("select Descripcion from Categorias");
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-
-            sda.Fill(ds);
-            DropDownList1.DataSource = ds;
-            DropDownList1.DataTextField = "FieldName";                            // FieldName of Table in DataBase
-            DropDownList1.DataValueField = "FieldName";
-            DropDownList1.DataBind();
-
-
-
-
-
-
-
-
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SeleccionarCombo();
+          
+            //SeleccionarCombo();
         }
     }
 }
