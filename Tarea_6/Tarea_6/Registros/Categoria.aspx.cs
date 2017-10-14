@@ -25,10 +25,18 @@ namespace Tarea_6.Registros
 
         protected void GuardarButton_Click(object sender, EventArgs e)
         {
-            Categorias categoria = new Categorias();
-            Llenar(categoria);
-            CategoriaBLL.Guardar(categoria);
-            Label1.Text = "Registro con exito";
+            if (CategoriaTextBox.Text == "")
+            {
+                Label1.Text = "Llena el campo Nombre de Categorias";
+            }
+            else
+            {
+                Categorias categoria = new Categorias();
+                Llenar(categoria);
+                CategoriaBLL.Guardar(categoria);
+                Label1.Text = "Registro con exito";
+            }
+           
 
         }
 

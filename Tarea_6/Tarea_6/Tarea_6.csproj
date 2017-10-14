@@ -89,6 +89,7 @@
     <Content Include="App_Data\Tarea6Db_log.ldf">
       <DependentUpon>Tarea6Db.mdf</DependentUpon>
     </Content>
+    <Content Include="CSS\StyleSheet1.css" />
     <Content Include="Global.asax" />
     <Content Include="Registros\Categoria.aspx" />
     <Content Include="Registros\Presupuesto.aspx" />
