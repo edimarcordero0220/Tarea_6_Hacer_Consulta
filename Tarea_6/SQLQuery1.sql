@@ -1,1 +1,1 @@
-﻿select * from Categorias;
+﻿Select * From Categorias;

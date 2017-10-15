@@ -28,7 +28,7 @@
 &nbsp;Fecha<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp; Descripcion<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
         </asp:DropDownList>
-&nbsp;&nbsp; No. Categoria<asp:TextBox ID="TextBox3" runat="server" Width="42px"></asp:TextBox>
+&nbsp;&nbsp; No. Categoria<asp:TextBox ID="CategoriaIdTextBox" runat="server" Width="42px" AutoPostBack="True" OnTextChanged="CategoriaIdTextBox_TextChanged"> </asp:TextBox>
 &nbsp; Monto<asp:TextBox ID="TextBox4" runat="server" Width="66px"></asp:TextBox>
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

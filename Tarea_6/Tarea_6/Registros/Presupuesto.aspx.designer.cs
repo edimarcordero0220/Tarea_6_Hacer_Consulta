@@ -49,13 +49,13 @@ namespace Tarea_6.Registros {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// TextBox3 control.
+        /// CategoriaIdTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox CategoriaIdTextBox;
         
         /// <summary>
         /// TextBox4 control.

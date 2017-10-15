@@ -26,9 +26,7 @@ namespace Tarea_6.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\Edimar Cordero\\sour" +
-            "ce\\repos\\Tarea_6_Hacer_Consulta\\Tarea_6\\Tarea_6\\App_Data\\Tarea6Db.mdf\";Integrate" +
-            "d Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-19EANE5;Initial Catalog=Tarea6Db;Integrated Security=True")]
         public string ConStr {
             get {
                 return ((string)(this["ConStr"]));
