@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-   public class Presupuesto
+   public class Presu
     {
         [Key]
         public int presupuestoId { get; set; }

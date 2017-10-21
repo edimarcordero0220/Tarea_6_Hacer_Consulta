@@ -11,20 +11,21 @@ namespace BLL
 {
     public class PresupuestoBLL
     {
-        public static Presupuesto Guardar(Presupuesto nuevo)
+        public static Presu Guardar(Presu n)
         {
-            Presupuesto retorno = null;
-            using (var conn = new DAL.Repositorio<Presupuesto>())
-            {
-                retorno = conn.Guardar(nuevo);
-            }
-            return retorno;
+         Presu retorno = null;
+        using (var conn = new DAL.Repositorio<Presu>())
+        {
+         retorno = conn.Guardar(n);
         }
+            return retorno;
+       }
 
-        public static Presupuesto Buscar(Expression<Func<Presupuesto, bool>> tipo)
+        
+        public static Presu Buscar(Expression<Func<Presu, bool>> tipo)
         {
-            Presupuesto Result = null;
-            using (var repositorio = new DAL.Repositorio<Presupuesto>())
+            Presu Result = null;
+            using (var repositorio = new DAL.Repositorio<Presu>())
             {
                 Result = repositorio.Buscar(tipo);
 
@@ -33,10 +34,10 @@ namespace BLL
             }
             return Result;
         }
-        public static bool Modificar(Presupuesto criterio)
+        public static bool Modificar(Presu criterio)
         {
             bool mod = false;
-            using (var db = new DAL.Repositorio<Presupuesto>())
+            using (var db = new DAL.Repositorio<Presu>())
             {
                 mod = db.Modificar(criterio);
             }
@@ -45,10 +46,10 @@ namespace BLL
 
         }
 
-        public static bool Eliminar(Presupuesto existente)
+        public static bool Eliminar(Presu existente)
         {
             bool eliminado = false;
-            using (var repositorio = new DAL.Repositorio<Presupuesto>())
+            using (var repositorio = new DAL.Repositorio<Presu>())
             {
                 eliminado = repositorio.Eliminar(existente);
             }
@@ -56,10 +57,10 @@ namespace BLL
             return eliminado;
 
         }
-        public static List<Presupuesto> GetList(Expression<Func<Presupuesto, bool>> criterio)
+        public static List<Presu> GetList(Expression<Func<Presu, bool>> criterio)
         {
-            List<Presupuesto> retorno = null;
-            using (var conn = new DAL.Repositorio<Presupuesto>())
+            List<Presu> retorno = null;
+            using (var conn = new DAL.Repositorio<Presu>())
             {
                 try
                 {
@@ -74,10 +75,10 @@ namespace BLL
             }
 
         }
-        public static List<Presupuesto> GetListTodo()
+        public static List<Presu> GetListTodo()
         {
-            List<Presupuesto> retorno = null;
-            using (var conn = new DAL.Repositorio<Presupuesto>())
+            List<Presu> retorno = null;
+            using (var conn = new DAL.Repositorio<Presu>())
             {
                 try
                 {

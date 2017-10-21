@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Presupuesto.aspx.cs" Inherits="Tarea_6.Registros.Presupuesto" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Presupuestos.aspx.cs" Inherits="Tarea_6.Registros.Presupuesto" %>
 
 <!DOCTYPE html>
 
@@ -25,16 +25,19 @@
             Registro Presupuesto<br />
         </div>
 &nbsp;ID<asp:TextBox ID="TextBox1" runat="server" Width="44px"></asp:TextBox>
-&nbsp;Fecha<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; Descripcion<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+&nbsp;Fecha<asp:TextBox ID="FechaTextBox" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp; No. Categoria<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
         </asp:DropDownList>
-&nbsp;&nbsp; No. Categoria<asp:TextBox ID="CategoriaIdTextBox" runat="server" Width="42px" AutoPostBack="True" OnTextChanged="CategoriaIdTextBox_TextChanged"> </asp:TextBox>
-&nbsp; Monto<asp:TextBox ID="TextBox4" runat="server" Width="66px"></asp:TextBox>
-        <br />
+        &nbsp;&nbsp; Descripcion<asp:TextBox ID="DescripcionTextBox" runat="server" Width="97px" OnTextChanged="CategoriaIdTextBox_TextChanged" AutoCompleteType="Email"></asp:TextBox>
+&nbsp;*&nbsp;&nbsp;&nbsp; Monto<asp:TextBox ID="MontoTextBox" runat="server" Width="66px"></asp:TextBox>
+        *<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
+        <asp:Button ID="GuardarButton" runat="server" OnClick="GuardarButton_Click" Text="Guardar" />
 &nbsp;&nbsp;
-        <asp:Button ID="GuardarButton" runat="server" Text="Guardar" />
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        </p>
     </form>
         </body>
 </html>
