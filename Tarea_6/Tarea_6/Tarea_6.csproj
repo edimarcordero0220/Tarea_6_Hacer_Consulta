@@ -76,7 +76,9 @@
     <Content Include="content\toastr.min.css" />
     <Content Include="content\toastr.scss" />
     <Content Include="content\toastr.less" />
+    <Content Include="PaginaMaestra.Master" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\EdimarCMAplicada2 - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,8 +102,8 @@
     <Content Include="Registros\Usuario.aspx" />
     <Content Include="Scripts\jquery-1.6.3.js" />
     <Content Include="Scripts\jquery-1.6.3.min.js" />
-    <Content Include="Scripts\toastr.js" />
-    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Toastr\toastr.min.css" />
+    <Content Include="Toastr\toastr.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +113,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMaestra.Master.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMaestra.Master.designer.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

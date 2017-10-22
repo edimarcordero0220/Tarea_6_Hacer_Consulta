@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace Tarea_6
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Default1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
         {
 
         }

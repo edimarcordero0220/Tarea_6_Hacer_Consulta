@@ -17,13 +17,15 @@ namespace Tarea_6
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+
         public bool ValidarUsuario()
         {
             if (UsuarioBLL.GetListaNombre(NombreTextBox.Text).Count() == 0)
             {
                 Label1.Text = "Usuario No Registrado";
+                
                 return false;
             }
             return true;
@@ -33,6 +35,7 @@ namespace Tarea_6
             if (UsuarioBLL.GetContrasena(ClaveTextBox.Text).Count() == 0)
             {
                 Label1.Text="Contrasena Invalida";
+                
                 return false;
             }
             return true;
@@ -40,23 +43,19 @@ namespace Tarea_6
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-            Usuarios usuario = new Usuarios();
-            DataTable dt = new DataTable();
+         
             if (ValidarUsuario() && ValidarContrasena() == true)
             {
                 Response.Redirect("Default.aspx");
             }
             else
             {
-                Label1.Text = "No Existe";
+                
+
             }
             
         }
     }
 
 
-        
-        
-            
-    
 }
