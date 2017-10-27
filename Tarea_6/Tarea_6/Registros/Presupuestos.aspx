@@ -24,12 +24,16 @@
             <br />
             Registro Presupuesto<br />
         </div>
-&nbsp;ID<asp:TextBox ID="TextBox1" runat="server" Width="44px"></asp:TextBox>
+&nbsp;ID<asp:TextBox ID="IdTextBox" runat="server" Width="44px"></asp:TextBox>
 &nbsp;Fecha<asp:TextBox ID="FechaTextBox" runat="server"></asp:TextBox>
         &nbsp;&nbsp;&nbsp; No. Categoria<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
         </asp:DropDownList>
-        &nbsp;&nbsp; Descripcion<asp:TextBox ID="DescripcionTextBox" runat="server" Width="97px" OnTextChanged="CategoriaIdTextBox_TextChanged" AutoCompleteType="Email"></asp:TextBox>
-&nbsp;*&nbsp;&nbsp;&nbsp; Monto<asp:TextBox ID="MontoTextBox" runat="server" Width="66px"></asp:TextBox>
+     
+&nbsp;
+     
+&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="DescripcionTextBox" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp; Monto<asp:TextBox ID="MontoTextBox" runat="server" Width="66px"></asp:TextBox>
         *<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />

@@ -24,8 +24,10 @@ namespace Tarea_6
         {
             if (UsuarioBLL.GetListaNombre(NombreTextBox.Text).Count() == 0)
             {
-                Label1.Text = "Usuario No Registrado";
-                
+                //Label1.Text = "Usuario No Registrado";
+                Validar.ShowToastr(this, "Maldito animal", "Debes llenar ambos campos", "warning");
+
+
                 return false;
             }
             return true;
@@ -34,8 +36,11 @@ namespace Tarea_6
         {
             if (UsuarioBLL.GetContrasena(ClaveTextBox.Text).Count() == 0)
             {
-                Label1.Text="Contrasena Invalida";
-                
+                //Label1.Text="Contrasena Invalida";
+                // || NombreTextBox.Text == "" || ClaveTextBox.Text == ""
+                Validar.ShowToastr(this, "Maldito animal", "Debes llenar ambos campos", "warning");
+
+
                 return false;
             }
             return true;
@@ -44,15 +49,25 @@ namespace Tarea_6
         protected void LoginButton_Click(object sender, EventArgs e)
         {
          
-            if (ValidarUsuario() && ValidarContrasena() == true)
+            if (ValidarUsuario() && ValidarContrasena() == true )
             {
+                
                 Response.Redirect("Default.aspx");
+                Validar.ShowToastr(this, "Muy bien sicario", "Correcto", "Success");
+
+
+
             }
             else
             {
-                
 
+                
             }
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             
         }
     }

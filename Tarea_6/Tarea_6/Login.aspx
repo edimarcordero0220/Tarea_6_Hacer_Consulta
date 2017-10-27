@@ -12,6 +12,13 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
       
+            <%--toastr--%>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/Toastr/toastr.min.js"></script>
+    <link href="/Toastr/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
         <style type="text/css">
             .auto-style1 {
                 width: 136px;

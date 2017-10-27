@@ -49,7 +49,8 @@
   <ItemGroup>
     <Compile Include="Categorias.cs" />
     <Compile Include="DetallePresupuesto.cs" />
-    <Compile Include="Presu.cs" />
+    <Compile Include="Detalles.cs" />
+    <Compile Include="Presupuestos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuarios.cs" />
   </ItemGroup>

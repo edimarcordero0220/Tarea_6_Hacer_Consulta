@@ -97,6 +97,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Precio.aspx" />
     <Content Include="Registros\Categoria.aspx" />
+    <Content Include="Registros\Detalle.aspx" />
     <Content Include="Registros\Presupuestos.aspx" />
     <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
     <Content Include="Registros\Usuario.aspx" />
@@ -104,7 +105,9 @@
     <Content Include="Scripts\jquery-1.6.3.min.js" />
     <Content Include="Toastr\toastr.min.css" />
     <Content Include="Toastr\toastr.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -150,6 +153,13 @@
     </Compile>
     <Compile Include="Registros\Categoria.aspx.designer.cs">
       <DependentUpon>Categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Detalle.aspx.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\Detalle.aspx.designer.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registros\Presupuestos.aspx.cs">
       <DependentUpon>Presupuestos.aspx</DependentUpon>

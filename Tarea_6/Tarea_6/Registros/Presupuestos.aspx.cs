@@ -31,10 +31,13 @@ namespace Tarea_6.Registros
             DropDownList1.DataTextField ="CategoriaId";            
             DropDownList1.DataValueField = "Descripcion";
             DropDownList1.DataBind();
+
+            
+
            }
 
 
-        public void Llenar(Presu p)
+        public void Llenar(Presupuestos p)
         {
 
             
@@ -63,7 +66,7 @@ namespace Tarea_6.Registros
             }
             else
             {
-               Entidades.Presu pre = new Entidades.Presu();
+               Entidades.Presupuestos pre = new Entidades.Presupuestos();
                 Llenar(pre);
                 PresupuestoBLL.Guardar(pre);
                 Label1.Text = "Registro con exito";

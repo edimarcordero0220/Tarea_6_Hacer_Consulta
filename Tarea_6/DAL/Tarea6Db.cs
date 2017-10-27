@@ -14,9 +14,10 @@ namespace DAL
         {
                 
         }
-        public virtual DbSet<Presu> presupuesto { get; set; }
+        public virtual DbSet<Presupuestos> presupuesto { get; set; }
         public virtual DbSet<DetallePresupuesto> detalle{ get; set; }
         public virtual DbSet<Categorias>categoria { get; set; }
         public virtual DbSet<Usuarios> usuario { get; set; }
+        public virtual DbSet<Detalles> detail { get; set; }
     }
 }
